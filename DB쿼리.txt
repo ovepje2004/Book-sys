@@ -1,0 +1,18 @@
+use sunrin;
+create table user(
+name varchar(12),
+id varchar(12),
+pwd varchar(12)
+);
+create table booklist(
+name varchar(12),
+state varchar(12)
+);
+insert into booklist(name, state)
+value('좀비 서바이벌 가이드', '대여 가능'), 
+('좀비 바이러스 치료법', '예약 중'), 
+('나는 좀비를 만났다', '대여 가능');
+
+select * from booklist;
+
+update booklist set '대여 가능' where name='';
